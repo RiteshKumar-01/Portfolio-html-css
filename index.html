@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WelcomeToMyWorld</title>
+    <title>Ritesh's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="AppResponsive.css">
     <link rel="stylesheet" href="lightbox.min.css">
     <script src="lightbox-plus-jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -18,12 +19,11 @@
         <div class="max-width">
             <div class="logo"><a href="#">Portfolio<span>.com</span></a></div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#achievement">Achievement</a></li>
-                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#project">Project</a></li>
                 <li><a href="#contact">Contact Us</a></li>
+                <i class="ri-menu-line"></i>
             </ul>
         </div>
     </nav>
@@ -34,27 +34,28 @@
                 <div class="text-1">Hello there! I am</div>
                 <div class="text-2">Ritesh Kumar</div>
                 <div class="text-3">And I'm a <span>Student</span></div>
-                <a href="Rezume.pdf" target="_blank">Hire Me</a>
-
+                <a href="https://www.linkedin.com/in/riteshkumar01/" target="_blank">Hire Me</a>
             </div>
         </div>
     </section>
 
 
     <section class="about" id="about">
+        <h2 class="title">About Me</h2>
         <div class="max-width">
-            <h2 class="title">About Me</h2>
             <div class="about-content">
                 <div class="column-left">
-                    <img src="2020-02-13-00-24-04-9871.jpg" alt="Not Found">
+                    <img src="./assets/profile.png" alt="Not Found">
                 </div>
                 <div class="column-right">
-                    <div class="text">I'm Ritesh and I'm a <span>Student</span></div>
-                    <p>I am currently working as an Associate Software Engineer at Indus Net Technologies, where I work as a Full Stack Developer. In addition, I am currently pursuing a Master of Computer Application from Annex College of Management Studies. I work on improving my skills in various areas such as Web Development, Android Development, and problem-solving through coding on a daily basis.
-                        I have completed my BCA (Bachelor of Computer Application) from Dr. B.C. Roy Engineering College. As an independent web developer, I am passionate about designing websites. I have already designed a few small projects using the latest technology, which I have uploaded to my GitHub account.</p>
-                    <a href="Rezume.pdf" target="_blank">Download CV</a>
+                    <div class="text">I'm Ritesh and I'm a <span>Working Professional</span></div>
+                    <p>I am currently working as an Associate Software Engineer in Kolkata based company named Indus Net Technologies(INT.) where I work as a Full Stack Developer. In additon to this I am passionate about designing websites, Android Application Development as well as problem solving.</p>
+                    <a class="cv-button" href="Rezume.pdf" target="_blank">Get CV</a>
+                    <div class="connect">
+                        <a href="https://github.com/RiteshKumar-01" target="_blank"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/riteshkumar01/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -135,39 +136,39 @@
     </section>
 
 
-    <div class="gallery" id="gallery">
+    <!-- <div class="gallery" id="gallery">
         <div class="max-width">
             <h2 class="title2">Gallery</h2>
             <div class="gallery-content">
                 <div class="container">
                     <div class="box1">
-                        <a href="image1.jpg" data-lightbox="myGallery"><img src="image1.jpg" alt="Loading"
+                        <a href="image1.jpg" data-lightbox="myGallery"><img src="./assets/image1.jpg" alt="Loading"
                                 class="image"></a>
-                        <a href="image2.jpg" data-lightbox="myGallery"><img src="image2.jpg" alt="Loading"
+                        <a href="image2.jpg" data-lightbox="myGallery"><img src="./assets/image2.jpg" alt="Loading"
                                 class="image"></a>
-                        <a href="image3.jpg" data-lightbox="myGallery"> <img src="image3.jpg" alt="Loading"
+                        <a href="image3.jpg" data-lightbox="myGallery"> <img src="./assets/image3.jpg" alt="Loading"
                                 class="image"></a>
                     </div>
                     <div class="box2">
-                        <a href="image4.JPG" data-lightbox="myGallery"> <img src="image4.JPG" alt="Loading"
+                        <a href="image4.JPG" data-lightbox="myGallery"> <img src="./assets/image4.JPG" alt="Loading"
                                 class="image"></a>
-                        <a href="image5.jpg" data-lightbox="myGallery"> <img src="image5.jpg" alt="Loading"
+                        <a href="image5.jpg" data-lightbox="myGallery"> <img src="./assets/image5.jpg" alt="Loading"
                                 class="image"></a>
-                        <a href="image6.jpg" data-lightbox="myGallery"> <img src="image6.jpg" alt="Loading"
+                        <a href="image6.jpg" data-lightbox="myGallery"> <img src="./assets/image6.jpg" alt="Loading"
                                 class="image"></a>
                     </div>
                     <div class="box3">
-                        <a href="image7.jpg" data-lightbox="myGallery"> <img src="image7.jpg" alt="Loading"
+                        <a href="image7.jpg" data-lightbox="myGallery"> <img src="./assets/image7.jpg" alt="Loading"
                                 class="image"></a>
-                        <a href="image8.jpg" data-lightbox="myGallery"><img src="image8.jpg" alt="Loading"
+                        <a href="image8.jpg" data-lightbox="myGallery"><img src="./assets/image8.jpg" alt="Loading"
                                 class="image"></a>
-                        <a href="image9.jpg" data-lightbox="myGallery"> <img src="image9.jpg" alt="Loading"
+                        <a href="image9.jpg" data-lightbox="myGallery"> <img src="./assets/image9.jpg" alt="Loading"
                                 class="image"></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="achievement" id="achievement">
@@ -176,7 +177,7 @@
             <div class="achievement-content">
                 <div class="area1">
                     <div class="left1">
-                        <a href="IMG_20210319_150151.jpg" data-lightbox="myGallery"><img src="IMG_20210319_150151.jpg" alt="Loading"></a>
+                        <a href="IMG_20210319_150151.jpg" data-lightbox="myGallery"><img src="./assets/IMG_20210319_150151.jpg" alt="Loading"></a>
                     </div>
                     <div class="right1">
                         <p>I have passed my Matriculation(10th) from Kendriya Vidyalaya Bokaro Thermal affliated with
@@ -197,12 +198,12 @@
 
                     </div>
                     <div class="right2">
-                        <a href="f.jpg" data-lightbox="mygallery"> <img src="f.jpg" alt="Loading"></a>
+                        <a href="f.jpg" data-lightbox="mygallery"> <img src="./assets/f.jpg" alt="Loading"></a>
                     </div>
                 </div>
                 <div class="area3">
                     <div class="left3">
-                        <a href="IMG_20210831_125312.jpg" data-lightbox="myGallery"><img src="IMG_20210831_125312.jpg"
+                        <a href="IMG_20210831_125312.jpg" data-lightbox="myGallery"><img src="./assets/IMG_20210831_125312.jpg"
                                 alt="Loading"></a>
                     </div>
                     <div class="right3">
@@ -221,7 +222,7 @@
             <div class="project-content">
                 <div class="area1">
                     <div class="left1">
-                        <a href="careergyan.png" data-lightbox="myGallery"><img src="careergyan_crop.png" alt="Loading"></a>
+                        <a href="careergyan.png" data-lightbox="myGallery"><img src="./assets/careergyan_crop.png" alt="Loading"></a>
                     </div>
                     <div class="right1">
                         <h2>CarrerGyan</h2>
@@ -238,13 +239,13 @@
 
                     </div>
                     <div class="right2">
-                        <a href="todo_list.png" data-lightbox="mygallery"> <img src="todo_list.png" alt="Loading"></a>
+                        <a href="todo_list.png" data-lightbox="mygallery"> <img src="./assets/todo_list.png" alt="Loading"></a>
                     </div>
                 </div>
 
                 <div class="area3">
                     <div class="left3">
-                        <a href="portfolio.png" data-lightbox="myGallery"><img src="portfolio_crop.png"
+                        <a href="portfolio.png" data-lightbox="myGallery"><img src="./assets/portfolio_crop.png"
                                 alt="Loading"></a>
                     </div>
                     <div class="right3">
