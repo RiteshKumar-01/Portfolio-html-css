@@ -187,6 +187,7 @@ a{
 
 .about .about-content .column-right p{
     text-align: justify;
+    
 }
 
 .about .about-content .column-right .cv-button{
@@ -222,7 +223,6 @@ a{
 
 }
 .skills .title1{
-
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -231,6 +231,11 @@ a{
     padding-bottom: 20px;
     font-family: 'Ubuntu' , sans-serif;
 }
+
+.skills .max-width{
+    width: 60%;
+}
+
 
 .skills .title1::before{
     content: "";
@@ -258,20 +263,30 @@ a{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
-    text-align: justify;
+
+.skills .skills-content .right{
+    width: 70%;
 }
-.skills .skills-content .left a{
-    display: inline-block;
-    background: crimson;
-    color: white;
-    font-size: 20px;
-    padding: 7px 14px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border : 2px solid crimson;
-    transition: all 0.3s ease;
+
+.tech-logo{
+    margin-left: -40px;
+    width: 90%;
 }
+
+.skills .skills-content .right .tech-logo{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.skills .skills-content .right .tech-logo .logo{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+
 .skills .skills-content .left a:hover{
     color: crimson;
     background: none;
@@ -281,137 +296,58 @@ a{
      padding: 30px ;
      margin-left: 180px;
      width: 700px;
-     height: 600px;
 }
-
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.skills .skills-content .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top :0;
-    background: crimson;
-}
-
-.skills-content .right .C::before{
-    width:60%;
-}
-.skills-content .right .DS::before{
-    width:40% ;
-}
-.skills-content .right .Cpp::before{
-    width:50%;
-}
-.skills-content .right .HTML::before{
-    width: 80%;
-}
-.skills-content .right .CSS::before{
-    width: 40% ;
-}
-.skills-content .right .Js::before{
-    width: 60%;
-}
-.skills-content .right .strapi::before{
-    width: 80%;
-}
-
-
-
-.gallery{
-
-    font-family: 'Poppins' , sans-serif;
-}
-.gallery .title2{
-
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu' , sans-serif;
-}
-
-.gallery .title2::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    transform: translateX(-50%);
-}
-.gallery .title2::after{
-    content: "what I have";
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    font-size: 18px;
-    color: crimson;
-    padding: 5px;
-    transform: translateX(-50%);
-
-}
-
-.gallery-content {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-}
-
-.container{
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.image{
-
-    height: 280px;
-    width: 400px;
-}
-
-.container img {
-
-    padding: 15px;
-    filter: grayscale(0.8);
-    transition:  0.6s;
-}
-
-.container img:hover {
-
-    filter: grayscale(0);
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
 
 
 .achievement{
-
     font-family: 'Poppins' , sans-serif;
-    margin-top: 150px;
+    margin-top: 100px;
 }
+
+.achievement-content{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.container{
+    height: 51vh;
+    width: 18vw;
+    position: relative;
+    /* background-color: rebeccapurple; */
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    box-shadow:  1px 5px 12px 0px;
+}
+
+.container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #111010;
+}
+
+.container:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+.container img{
+    object-fit: cover;
+    height: 55vh;
+    width: 23vw;
+}
+
+
+
+
+
 .achievement .title3{
 
     position: relative;
@@ -832,3 +768,15 @@ a{
     background: none;
 }
 
+.copyright{
+    font-family: 'Poppins' , sans-serif;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.copyright span{
+    color: crimson;
+}
